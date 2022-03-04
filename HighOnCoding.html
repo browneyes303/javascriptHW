@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighOnCoding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    
+    <style>
+        nav{
+            background-color: rgb(0, 153, 255);
+            color: white;
+            font-weight: 50;
+        }
+
+        #curse{
+            background-color: rgb(222, 222, 222);
+            color: rgb(84, 84, 84)
+        }
+
+    </style>
+
+</head>
+<body>
+
+<script>
+
+    let body = document.querySelector('body')
+    let curseHeader = document.createElement('h1')
+    let container = document.createElement('div')
+    let nav = document.createElement('nav')
+    let divCurse = document.createElement('div')
+    let divNav = document.createElement('div')
+    let divNavHome = document.createElement('div')
+    let divNavCat = document.createElement('div')
+    let divCurseText = document.createElement('div')
+    let divHello = document.createElement('div')
+    let divInfo = document.createElement('div')
+    let divWatch = document.createElement('div')
+    let divWatchHeader = document.createElement('div')
+    let divWatchText = document.createElement('div')
+
+    body.appendChild(container)
+    container.appendChild(nav)
+    container.setAttribute('id', 'container')
+    container.setAttribute('class', 'row p-0 m-0')
+    container.appendChild(divCurse)
+    container.appendChild(divWatch)  
+    
+    nav.setAttribute('class', 'row p-5 nav')
+    nav.appendChild(divNav)
+    nav.appendChild(divNavHome)
+    nav.appendChild(divNavCat)
+    divNav.innerHTML = '<b>HighOnCoding</b>'
+    divNav.setAttribute('class', 'col display-2 nav ml-5')
+
+    divNavHome.innerHTML = '<b>Home</b>'
+    divNavHome.setAttribute('class', 'col-3 display-6 nav align-items-center justify-items-start')
+
+    divNavCat.innerHTML = 'Catagories'
+    divNavCat.setAttribute('class', 'col-3 display-6 nav fw-lighter align-items-center justify-items-center')
+
+    divCurse.setAttribute('id', 'curse')
+    divCurse.setAttribute('class', 'col-11 align-items-center justify-items-center m-4')
+    divCurse.appendChild(curseHeader)
+    curseHeader.textContent = 'Curse of the Current Reviews'
+    curseHeader.setAttribute('class', 'col ml-4 mt-3')
+    divCurse.appendChild(divCurseText)
+    divCurseText.setAttribute('class', 'row align-items-start justify-items-start p-5')
+    divCurseText.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi deleniti dolores ipsam debitis nemo amet, officiis earum laboriosam atque praesentium vero unde! Unde dolore voluptate asperiores? Veritatis, rem ipsum!'
+
+    divWatch.setAttribute('id', 'watch')
+    divWatch.setAttribute('class', 'col-11')
+    divWatch.appendChild(divWatchHeader)
+    divWatch.appendChild(divWatchText)
+    divWatchHeader.setAttribute('class', "col-11 fs-3")
+
+</script>
+
+</body>
+</html>
